@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Banco de Currículos - JobsNET</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h2 class="page-header">Banco de Currículos</h2>
+            <p>Página para atração de profissionais para conectar as oportunidades de emprego.</p>
+        </div>
+    </div>
+
+    <div class='formulario'>
+        <form action="./cadastrado.html" method="POST">
+            <h3>DADOS PESSOAIS</h3>
+            <div class='group'>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Nome Completo *</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" id="nome-completo" required/>
+                    </fieldset>
+                </div>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Cargo Pretendido *</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" id="cargo-pretendido" required/>
+                    </fieldset>
+                </div>
+                
+            </div>
+
+            <div class='group'>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Data de Nascimento *</span>
+                        <input type="date" class="form-control" aria-describedby="sizing-addon2" id="data-de-nascimento" required>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon" id="sizing-addon3">Estado Civil</span>
+                        <select name="estado-civil" id="estado-civil">
+                            <option value='solteiro'>Solteiro(a)</option>
+                            <option value='casado'>Casado(a)</option>
+                            <option value='divorciado'>Divorciado(a)</option>
+                            <option value='viuvo'>Viúvo(a)</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon" id="sizing-addon3">Sexo</span>
+                        <select name="sexo" id="sexo">
+                            <option value='feminino'>Feminino</option>
+                            <option value='masculino'>Masculino</option>
+                            <option value='outro'>Outro</option>
+                            <option value='prefiro-nao-falar'>Prefiro não falar</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class='group'>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Endereço *</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" id="endereco" placeholder="ex.: Nome da Rua, 56, Bloco 2, AP 301" required>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Número *</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" id="numero" placeholder="ex.: Nome da Rua, 56, Bloco 2, AP 301" required>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class='group'>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Bairro *</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" id="bairro" required>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Cidade *</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" id="cidade" required>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class='group'>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">CEP *</span>
+                        <input type="number" class="form-control" aria-describedby="sizing-addon1" id="cep" required>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Telefone Fixo 1</span>
+                        <input type="number" class="form-control" aria-describedby="sizing-addon1" id="telefone-fixo1">
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Telefone Fixo 2</span>
+                        <input type="number" class="form-control" aria-describedby="sizing-addon1" id="telefone-fixo2">
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class='group'>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Celular *</span>
+                        <input type="number" class="form-control" aria-describedby="sizing-addon1" id="celular" required>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Contato</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" id="contato">
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                <fieldset>
+                    <span class="input-group-addon">E-mail *</span>
+                    <input type="email" class="form-control" aria-describedby="sizing-addon1" id="email" placeholder="ex.: myname@example.com" required>
+                </fieldset>
+                </div>
+            </div>
+
+            <h3>DOCUMENTOS</h3>
+            
+            <div class='group'>
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">Identidade</span>
+                        <input type="number" class="form-control" aria-describedby="sizing-addon1" id="identidade">
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon">CPF *</span>
+                        <input type="number" class="form-control" aria-describedby="sizing-addon1" id="cpf" required>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon" id="sizing-addon3">Habilitação</span>
+                        <select name="habilitacao" id='habilitacao'>
+                            <option value='nao-possuo'>Não possuo</option>
+                            <option value='A'>A</option>
+                            <option value='B'>B</option>
+                            <option value='AB'>AB</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div class='filds'>
+                    <fieldset>
+                        <span class="input-group-addon" id="sizing-addon3">Possui Veículo</span>
+                        <select name="veiculo" id='veiculo'>
+                            <option value='sim'>Sim</option>
+                            <option value='nao'>Nao</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div>
+            <button type="submit" class="btn btn-info" onclick='cadastrar()'>Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+
+<script src="script.js"></script>
+
+</html>

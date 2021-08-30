@@ -1,0 +1,46 @@
+.group {
+    display:flex;
+    justify-items: left;
+    width: 80%;
+    margin: 20px 0 20px 0;
+}
+
+.filds{
+  padding-right: 30px;
+}
+
+input[id="nome-completo"] {
+    width: 300px;
+}
+
+input[id="endereco"] {
+  width: 300px;
+}
+
+input[id="numero"] {
+  width: 100px;
+}
+
+select[id="veiculo"] {
+  width: 120px;
+}
+
+select{
+  height: 35px;
+}
+
+h2{
+  font-size: 5rem;
+}
+
+.formulario {
+  margin: 0 10% 0 10%;
+}
+
+button {
+  margin: 0 10% 0 10%;
+}
+
+h1 {
+  text-align: center;
+}
